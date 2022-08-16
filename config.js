@@ -7,8 +7,8 @@ function convertToBool(text, fault = 'true') {
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 module.exports = {
-    VERSION: 'v3.0.0',
-    ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
+    VERSION: 'DARK-v3.0.0',
+    ALIVE: process.env.ALIVE || "https://i.imgur.com/aZdoZwK.jpeg Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
@@ -24,14 +24,14 @@ module.exports = {
     SESSION: process.env.SESSION || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f","deb80cd12ababea1c9b9a8ad6ce3fab2","78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us',
-    BOT_INFO: process.env.BOT_INFO || 'Raganork;Souravkl11;916282344739;https://i.imgur.com/st4R2dq.jpeg;https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb',
+    BOT_INFO: process.env.BOT_INFO || 'DARK-DEEP;☬𝕯𝖊𝖊𝖕𝖉𝖎𝖆☬;916291588399;https://i.imgur.com/aZdoZwK.jpeg;https://chat.whatsapp.com/EjGu5q7Gi0f6ml5IDejQ7W',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
     STICKER_DATA: process.env.STICKER_DATA,
-    BOT_NAME: process.env.BOT_NAME || 'Raganork',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://www.linkpicture.com/q/rgnk.jpg' : process.env.AUDIO_DATA,
+    BOT_NAME: process.env.BOT_NAME || 'DARK DEEP',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '☬𝕯𝖊𝖊𝖕𝖉𝖎𝖆☬;DARK-DEEP;https://i.imgur.com/aZdoZwK.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '4',
