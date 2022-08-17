@@ -52,7 +52,7 @@ Module({
   // Method 1: Via y2mate
   if (url!== "http://app.y2mate.com/download"){
   await fs.writeFileSync('./song.mp3',await skbuffer(url))
-  var song_data = await addInfo('./song.mp3',title,BOT_INFO.split(";")[0],"Raganork audio downloader",await skbuffer(thumbnail))
+  var song_data = await addInfo('./song.mp3',title,BOT_INFO.split(";")[0],"Dark Deep audio downloader",await skbuffer(thumbnail))
   return await message.client.sendMessage(message.jid, {
       audio:song_data,
       mimetype: 'audio/mp4'
@@ -65,7 +65,7 @@ Module({
   ffmpeg(song)
  .save('./song.mp3')
  .on('end', async () => {
-  var song = await addInfo('./song.mp3',title,BOT_INFO.split(";")[0],"Raganork audio downloader",await skbuffer(thumbnail))
+  var song = await addInfo('./song.mp3',title,BOT_INFO.split(";")[0],"Dark Deep audio downloader",await skbuffer(thumbnail))
   return await message.client.sendMessage(message.jid, {
       audio:song,
       mimetype: 'audio/mp4'
