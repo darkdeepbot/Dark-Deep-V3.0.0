@@ -1,4 +1,4 @@
-FROM quay.io/darkdeepbot/Dark-Deep-V3.0.0 :multidevice
+FROM quay.io/souravkl11/raganork:multidevice
 
 RUN git clone https://github.com/darkdeepbot/Dark-Deep-V3.0.0 /skl/Raganork
 WORKDIR /skl/Raganork
